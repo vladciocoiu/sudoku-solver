@@ -1,0 +1,38 @@
+.key {
+   border-right: 1px solid black;
+   border-bottom: 1px solid black;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   h4 {
+      font-size: 2vw;
+      margin: 0;
+      font-weight: normal;
+   }
+}
+
+.key-1,
+.key-2,
+.key-3 {
+   border-top: 1px solid black;
+}
+.key-1,
+.key-4,
+.key-7 {
+   border-left: 1px solid black;
+}
+
+.key:hover {
+   background-color: rgba(200, 200, 200, 0.4);
+   cursor: pointer;
+}
+
+.key:active {
+   background-color: rgba(200, 200, 200, 0.75);
+}
+
+@media only screen and (max-width: 800px) {
+   .key {
+      border: 0px;
+   }
+}

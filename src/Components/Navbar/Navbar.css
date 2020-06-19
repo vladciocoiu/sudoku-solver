@@ -1,0 +1,74 @@
+nav {
+  height: 12vh;
+  width: 100vw;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #d2e0bf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+nav .title {
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-size: 1.6vw;
+}
+
+nav .tutorial-button {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 5vw;
+  text-shadow: none;
+  outline: none;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+nav button:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 1024px) {
+  nav .title {
+    font-size: 2.5vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav .title {
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav .title {
+    font-size: 5vw;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  nav .title {
+    font-size: 5.5vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  nav .tutorial-button {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+/*# sourceMappingURL=Navbar.css.map */

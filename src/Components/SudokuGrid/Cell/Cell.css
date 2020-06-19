@@ -1,0 +1,87 @@
+.cell {
+  width: auto;
+  height: auto;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  text-align: center;
+  vertical-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cell h3 {
+  font-weight: normal;
+  margin: 0;
+  font-size: 2vw;
+}
+
+.cell-left {
+  border-left: 2px solid black;
+}
+
+.cell-right {
+  border-right: 2px solid black;
+}
+
+.cell-top {
+  border-top: 2px solid black;
+}
+
+.cell-bottom {
+  border-bottom: 2px solid black;
+}
+
+.cell-box-vertical {
+  border-right: 2px solid black;
+}
+
+.cell-box-horizontal {
+  border-bottom: 2px solid black;
+}
+
+.cell-selected {
+  background-color: rgba(200, 200, 200, 0.75);
+}
+
+.cell:hover {
+  background-color: rgba(200, 200, 200, 0.4);
+  cursor: pointer;
+}
+
+.cell:active {
+  background-color: rgba(200, 200, 200, 0.75);
+}
+
+.animating {
+  background: #b09398;
+}
+
+.invalid {
+  background-color: #e052549a;
+}
+
+@media only screen and (max-width: 1024px) {
+  .cell h3 {
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cell h3 {
+    font-size: 4vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cell h3 {
+    font-size: 5vw;
+  }
+}
+/*# sourceMappingURL=Cell.css.map */

@@ -1,0 +1,88 @@
+.tutorial-panel {
+   width: 100vw;
+   height: 100vh;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   z-index: 2;
+   .black-overlay {
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.5);
+   }
+   .panel {
+      width: 60vw;
+      height: 80vh;
+      background-color: white;
+      z-index: 3;
+      position: absolute;
+      top: 10vh;
+      left: 20vw;
+      display: grid;
+      grid-template-areas:
+         ". . . ."
+         ". t t ."
+         ". t1 t1 ."
+         ". t2 t2 ."
+         ". t3 t3 ."
+         ". . t4 ."
+         ". . . .";
+      grid-template-columns: 1fr 2fr 2fr 1fr;
+      grid-template-rows: 1fr 3fr 1fr 2fr 2fr 2fr 1fr;
+      button {
+         position: absolute;
+         right: 15px;
+         top: 15px;
+         border: none;
+         background: none;
+         text-shadow: none;
+         outline: none;
+         transition: 0.1s;
+      }
+      .title {
+         grid-area: t;
+      }
+      .text-1 {
+         grid-area: t1;
+      }
+      .text-2 {
+         grid-area: t2;
+      }
+      .text-3 {
+         grid-area: t3;
+      }
+      .text-4 {
+         grid-area: t4;
+         font-weight: bold;
+      }
+      h3 {
+         font-weight: normal;
+      }
+
+      button:hover {
+         transform: scale(1.1);
+      }
+
+      button:active {
+         transform: scale(1.2);
+      }
+   }
+}
+
+.hide {
+   display: none;
+}
+
+@media only screen and (max-width: 800px) {
+   .tutorial-panel {
+      .panel {
+         width: 100vw;
+         height: 130vh;
+         top: 0px;
+         left: 0px;
+         button {
+            transition: none;
+         }
+      }
+   }
+}

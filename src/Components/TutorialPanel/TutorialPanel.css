@@ -1,0 +1,110 @@
+.tutorial-panel {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+}
+
+.tutorial-panel .black-overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.tutorial-panel .panel {
+  width: 60vw;
+  height: 80vh;
+  background-color: white;
+  z-index: 3;
+  position: absolute;
+  top: 10vh;
+  left: 20vw;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: ". . . ." ". t t ." ". t1 t1 ." ". t2 t2 ." ". t3 t3 ." ". . t4 ." ". . . .";
+  -ms-grid-columns: 1fr 2fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 2fr 1fr;
+  -ms-grid-rows: 1fr 3fr 1fr 2fr 2fr 2fr 1fr;
+      grid-template-rows: 1fr 3fr 1fr 2fr 2fr 2fr 1fr;
+}
+
+.tutorial-panel .panel button {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  border: none;
+  background: none;
+  text-shadow: none;
+  outline: none;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.tutorial-panel .panel .title {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: t;
+}
+
+.tutorial-panel .panel .text-1 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: t1;
+}
+
+.tutorial-panel .panel .text-2 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: t2;
+}
+
+.tutorial-panel .panel .text-3 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: t3;
+}
+
+.tutorial-panel .panel .text-4 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 3;
+  grid-area: t4;
+  font-weight: bold;
+}
+
+.tutorial-panel .panel h3 {
+  font-weight: normal;
+}
+
+.tutorial-panel .panel button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.tutorial-panel .panel button:active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.hide {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .tutorial-panel .panel {
+    width: 100vw;
+    height: 130vh;
+    top: 0px;
+    left: 0px;
+  }
+  .tutorial-panel .panel button {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+/*# sourceMappingURL=TutorialPanel.css.map */
