@@ -105,6 +105,8 @@
   .tutorial-panel .panel button {
     -webkit-transition: none;
     transition: none;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
   }
 }
 /*# sourceMappingURL=TutorialPanel.css.map */

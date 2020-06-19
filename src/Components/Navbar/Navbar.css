@@ -69,6 +69,8 @@ nav button:hover {
   nav .tutorial-button {
     -webkit-transition: none;
     transition: none;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
   }
 }
 /*# sourceMappingURL=Navbar.css.map */

@@ -103,11 +103,11 @@
     margin-bottom: 2vh;
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: "1 2 3 4 5 6 7 8 9" "s s s x x x r r r";
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "1 2 3 4 5 6 7 8 9" ". . . . . . . . ." "s s s x x x r r r";
     width: 80vw;
-    height: 10vh;
+    height: 15vh;
   }
   .keyboard .delete-button,
   .keyboard .solve-button,
@@ -117,6 +117,12 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .keyboard .delete-button svg,
+  .keyboard .solve-button svg,
+  .keyboard .reset-button svg {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
   }
   .animating-overlay {
     width: 80vw;

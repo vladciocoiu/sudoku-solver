@@ -83,17 +83,21 @@
       margin-top: 5vh;
       margin-bottom: 2vh;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
       grid-template-areas:
          "1 2 3 4 5 6 7 8 9"
+         ". . . . . . . . ."
          "s s s x x x r r r";
       width: 80vw;
-      height: 10vh;
+      height: 15vh;
       .delete-button,
       .solve-button,
       .reset-button {
          border: 0px;
          flex-direction: column;
+         svg {
+            transform: scale(0.5);
+         }
       }
    }
    .animating-overlay {
