@@ -3,7 +3,7 @@ import "./Keyboard.css";
 
 import solve from "../../Algorithms/Solver.js";
 import Key from "./Key/Key.jsx";
-import { SolveIcon, DeleteIcon, ResetIcon } from "./Icons.jsx";
+import { SolveIcon, DeleteIcon, ResetIcon } from "../../SVGs/Icons.jsx";
 import { checkValidity } from "../../Algorithms/ValidityChecker.js";
 
 export default function Keyboard(props) {

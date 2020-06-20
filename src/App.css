@@ -1,5 +1,5 @@
 .App {
-   height: 100vh;
+   height: auto;
    width: 100vw;
    text-align: center;
    display: flex;
@@ -8,7 +8,7 @@
    align-items: center;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
    .App {
       flex-direction: column;
       justify-content: flex-start;

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
-import { QuestionMarkIcon } from "../Keyboard/Icons.jsx";
+
+import { QuestionMarkIcon } from "../../SVGs/Icons.jsx";
 
 export default function Navbar({ showTutorial, setShowTutorial }) {
    const handleButtonClick = () => {

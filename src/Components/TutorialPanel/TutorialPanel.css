@@ -2,14 +2,21 @@
   width: 100vw;
   height: 100vh;
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   top: 0px;
   left: 0px;
-  z-index: 2;
+  z-index: 5;
 }
 
 .tutorial-panel .black-overlay {
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -17,7 +24,6 @@
   width: 60vw;
   height: 80vh;
   background-color: white;
-  z-index: 3;
   position: absolute;
   top: 10vh;
   left: 20vw;
@@ -26,8 +32,8 @@
       grid-template-areas: ". . . ." ". t t ." ". t1 t1 ." ". t2 t2 ." ". t3 t3 ." ". . t4 ." ". . . .";
   -ms-grid-columns: 1fr 2fr 2fr 1fr;
       grid-template-columns: 1fr 2fr 2fr 1fr;
-  -ms-grid-rows: 1fr 3fr 1fr 2fr 2fr 2fr 1fr;
-      grid-template-rows: 1fr 3fr 1fr 2fr 2fr 2fr 1fr;
+  -ms-grid-rows: 1fr 3fr 2fr 2fr 2fr 2fr 1fr;
+      grid-template-rows: 1fr 3fr 2fr 2fr 2fr 2fr 1fr;
 }
 
 .tutorial-panel .panel button {
@@ -47,6 +53,7 @@
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: t;
+  color: #005377;
 }
 
 .tutorial-panel .panel .text-1 {
@@ -75,6 +82,7 @@
   -ms-grid-column: 3;
   grid-area: t4;
   font-weight: bold;
+  color: #005377;
 }
 
 .tutorial-panel .panel h3 {
@@ -95,10 +103,14 @@
   display: none;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
+  .tutorial-panel {
+    height: auto;
+  }
   .tutorial-panel .panel {
     width: 100vw;
-    height: 130vh;
+    height: auto;
+    padding-bottom: 50%;
     top: 0px;
     left: 0px;
   }

@@ -37,35 +37,15 @@ nav {
    }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
    nav {
-      .title {
-         font-size: 3vw;
-      }
-   }
-}
-
-@media only screen and (max-width: 600px) {
-   nav {
-      .title {
-         font-size: 5vw;
-      }
-   }
-}
-
-@media only screen and (max-width: 330px) {
-   nav {
-      .title {
-         font-size: 5.5vw;
-      }
-   }
-}
-
-@media only screen and (max-width: 800px) {
-   nav {
+      height: 60px;
       .tutorial-button {
          transition: none;
          transform: scale(0.5);
+      }
+      .title {
+         font-size: 20px;
       }
    }
 }

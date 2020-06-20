@@ -39,7 +39,7 @@
   background-color: rgba(200, 200, 200, 0.75);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .key {
     border: 0px;
   }

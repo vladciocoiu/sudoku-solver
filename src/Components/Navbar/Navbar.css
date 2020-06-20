@@ -47,30 +47,18 @@ nav button:hover {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  nav .title {
-    font-size: 3vw;
+@media only screen and (max-width: 900px) {
+  nav {
+    height: 60px;
   }
-}
-
-@media only screen and (max-width: 600px) {
-  nav .title {
-    font-size: 5vw;
-  }
-}
-
-@media only screen and (max-width: 330px) {
-  nav .title {
-    font-size: 5.5vw;
-  }
-}
-
-@media only screen and (max-width: 800px) {
   nav .tutorial-button {
     -webkit-transition: none;
     transition: none;
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
+  }
+  nav .title {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=Navbar.css.map */

@@ -1,7 +1,7 @@
 import React from "react";
 import "./TutorialPanel.css";
 
-import { XIcon } from "../Keyboard/Icons.jsx";
+import { XIcon } from "../../SVGs/Icons.jsx";
 
 export default function TutorialPanel({ show, setShow }) {
    const handleClick = () => {

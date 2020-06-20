@@ -97,17 +97,18 @@
   display: none;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .keyboard {
     margin-top: 5vh;
     margin-bottom: 2vh;
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+    -ms-grid-rows: 4fr 1fr 4fr;
+        grid-template-rows: 4fr 1fr 4fr;
         grid-template-areas: "1 2 3 4 5 6 7 8 9" ". . . . . . . . ." "s s s x x x r r r";
     width: 80vw;
-    height: 15vh;
+    height: 150px;
+    margin-bottom: 10vh;
   }
   .keyboard .delete-button,
   .keyboard .solve-button,
@@ -126,7 +127,7 @@
   }
   .animating-overlay {
     width: 80vw;
-    height: 15vh;
+    height: 150px;
     margin-top: 5vh;
     border: none;
   }
