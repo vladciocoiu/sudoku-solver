@@ -1,24 +1,7 @@
 # Sudoku Solver
 
-An app that solves Sudoku puzzles using the backtracking algorithm.
+This is an app that solves Sudoku puzzles using backtracking, made with React.js.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Usage
 
-Try It
----
-
-[ciorap88.github.io/Sudoku-Solver](https://ciorap88.github.io//Sudoku-Solver/)
-
-
-
-Install
----
-
-`npm install`
-
-
-
-Usage
----
-
-`npm start`
+You can try it out [here](https://ciorap88.github.io/sudoku-solver).
